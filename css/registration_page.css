@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --corFundo: #140857;
+    --corCard: #20107cca;
+    --corFonte: #B968C8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--corFundo);
+}
+
+#container {
+    width: 98vw;
+    height: auto;
+    margin: 2rem 0;
+}
+
+#container, #banner, #icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner, #form {
+    width: 370px;
+    border-radius: 20px;
+    background-color: var(--corCard);
+    padding: 30px 35px;
+    flex-direction: column;
+    color: #f0ffffde;
+}
+
+#icon {
+    padding: 2rem;
+    font-size: 120px;
+    color: var(--corFonte);
+}
+
+#banner {
+    height: 92%;
+    padding: 6.2rem 35px;
+    margin-right: 3rem;
+    text-align: justify;
+}
+
+#banner h1, #icon {
+    text-align: center;
+}
+
+#banner p {
+    line-height: 27px;
+}
+
+#form h2 {
+    color: var(--corFonte);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+  
+#form p {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+#generate:hover {
+    color: #0099ff;
+    cursor: pointer;
+}
+
+#banner, #form {
+    box-shadow: 0px 10px 40px #00000060;
+}
+
+.form-inputs {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+  
+.form-inputs label {
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+  
+.form-inputs input {
+    font-size: 12pt;
+    border: none;
+    padding: 0.6rem 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+#form input {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ba68c85d;
+    color: #f0ffffde;
+}
+
+#form input::placeholder {
+    color: #f0ffff94;
+}
+
+#banner h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form #btn {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #f0ffffde;
+    background: var(--corFonte);
+    cursor: pointer;
+}
+
+#form #btn:hover  {
+    background-color: #862297;
+    color: #fdfdfd;
+}
+
+#control a {
+    text-decoration: none;
+    color: #fdfdfd;
+    margin-left: .5rem;
+}
+
+#control a:hover {
+    text-decoration: underline;
+}
+
+.generator-password.hide {
+  display: none;
+}
+
+.generator-password .password-box {
+    position: relative;
+    height: 50px;
+}
+
+.password-box input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #aaa;
+}
+
+.password-box .fa-copy {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    color: #707070;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.fa-copy:hover {
+    color: var(--corFonte);
+}
+
+.generator-password .range-box {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.range-box input {
+    width: 100%;
+    accent-color: var(--corFonte);
+    cursor: pointer;
+}
+
+.range-box .number-range {
+    min-width: 30px;
+    text-align: right;
+    font-size: 17px;
+    color: #707070;
+}
+
+.generator-password .generate-btn {
+    width: 100%;
+    color: #fff;
+    padding: 12px 0px;
+    margin: 20px 0;
+    background-color: var(--corFonte);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #862297;
+    color: #fdfdfd;
+}
+
+@media screen and (max-width: 767px) {
+    #banner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #banner {
+        display: none;
+    }
+}
+

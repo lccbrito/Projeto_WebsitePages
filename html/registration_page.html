@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/registration_page.css">
+    <script src="../js/registration_page.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <div>
+                <i id="icon" class="fa-sharp fa-solid fa-triangle-exclamation"></i>
+                <h1>Atenção</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illo amet est culpa autem iure possimus. Totam, quibusdam porro animi atque a iure earum voluptatibus! Iste, corporis debitis. Minima, velit!</p>
+            </div>
+        </div>
+        <div id="form">
+            <h2>Cadastre-se</h2>
+            <div class="form-inputs">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="form-inputs">
+                <label for="email">E-mail</label>
+                <input type="text" type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="form-inputs">
+                <label for="password">Senha</label>
+                <input type="password" type="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <p>Deseja exibir sugestões de senhas? <span id="generate">Clique aqui.</span></p>
+            <div class="generator-password hide">
+                <p>Aqui está a sua senha:</p>
+                <div class="password-box">
+                    <input type="text" disabled>
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+                <div class="range-box">
+                    <input type="range" min="8" max="15"  value="8">
+                    <span class="number-range">8</span>
+                </div>
+                <button class="generate-btn">Gerador de senha</button>
+            </div>
+            <div class="form-inputs">
+                <label for="confirmpassword">Confirmação de Senha</label>
+                <input type="password" type="confirmpassword" id="confirmpassword" placeholder="Confirme a sua senha">
+            </div>
+            <div id="control">
+                <a href="login_page.html">Voltar</a>
+                <a href="home_page.html"><input id="btn" type="submit" value="Cadastrar"></a>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

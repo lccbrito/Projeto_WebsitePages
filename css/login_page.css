@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --corFundo: #140857;
+    --corCard: #20107cca;
+    --corFonte: #B968C8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--corFundo);
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 2rem;
+    width: 100vw;
+    height: 90vh;
+}
+
+main, #banner-box, #login-box, #card-login h1, .info-login, #btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-box, #login-box {
+    width: 50vw;
+    height: 100vh;
+}
+
+#banner-box, #card-login, .info-login {
+    flex-direction: column;
+}
+
+#banner-box h1 {
+    font-size: 3vw;
+    color: var(--corFonte);
+}
+
+img {
+    width: 35vw;
+}
+
+#card-login {
+    width: 60%;
+    padding: 30px 35px;
+    border-radius: 20px;
+    background-color: var(--corCard);
+}
+
+#card-login, .info-login input {
+    box-shadow: 0px 10px 40px #00000060;
+}
+
+#card-login h1 {
+    color: var(--corFonte);
+    font-weight: bolder;
+}
+
+.info-login, .info-login input {
+    width: 100%;
+}
+
+.info-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.info-login input {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ba68c85d;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+}
+
+.info-login label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.info-login input::placeholder {
+    color: #f0ffff94;
+}
+
+#remember{
+    margin-top: 1.5rem;
+    color: #f0ffffde;
+}
+
+#checkbox {
+    cursor: pointer;
+}
+
+#remember-text {
+    margin-left: .5rem;
+}
+
+#login-btn {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: var(--corFundo);
+    background: var(--corFonte);
+    cursor: pointer;
+}
+
+#login-btn:hover {
+    background-color: #7e308c;
+    color: #fdfdfd;
+}
+
+#options {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cadastro {
+    margin-left: .1rem;
+}
+
+#cadastro a, #remb-pass a {
+    color: var(--corFonte);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#options a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+    #banner-box {
+        display: none;
+    }
+
+    #login-box {
+        width: 100vw;
+    }
+    
+    #cadastro, #remb-pass {
+        font-size: 8pt;
+    }
+
+    #cadastro {
+        margin-right: 20px;
+    }
+}
